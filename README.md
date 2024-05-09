@@ -5,7 +5,7 @@ Using CSS to autonumbering heading elements
 ## Automatic heading numbering
 Description
 
-
+```css
 body.single-post{counter-reset:h1counter h2counter h3counter h4counter h5counter h6counter;}
 
 .single-post h1 {counter-reset:h2counter;}
@@ -13,7 +13,9 @@ body.single-post{counter-reset:h1counter h2counter h3counter h4counter h5counter
 .single-post h3 {counter-reset:h4counter;}
 .single-post h4 {counter-reset:h5counter;}
 .single-post h5 {counter-reset:h6counter;}
-/* End Common */
+```
+
+***
 
 ## Automatic heading numbering without hierarchy
 Description
