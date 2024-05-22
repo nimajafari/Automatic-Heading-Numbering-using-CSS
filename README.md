@@ -2,8 +2,8 @@
 Using CSS to autonumbering heading elements
 
 
-## Automatic heading numbering
-Description
+## Common CSS for all scenarios on this page
+For the first step, we need to reset all COUNTERS first. In this example, we reset all h1 to h6 with a selector. You can use your selector according to the page(s) you are working on.
 
 ```css
 body.single-post{counter-reset:h1counter h2counter h3counter h4counter h5counter h6counter;}
@@ -18,7 +18,7 @@ body.single-post{counter-reset:h1counter h2counter h3counter h4counter h5counter
 ***
 
 ## Automatic heading numbering without hierarchy
-Description
+In this scenario, all h2, h3, and h4 headings with class="h-num" will have automatic numbering WITHOUT hierarchy.
 
 ```css
 h2.h-num:before {
@@ -38,7 +38,8 @@ h4.h-num:before {
 ***
 
 ## Automatic heading numbering with hierarchy h2, h3, and h4
-Description
+In this scenario, all h2, h3, and h4 headings with class="h-num234" will have automatic numbering WITH hierarchy.
+
 
 ```css
 h2.h-num-234:before {
@@ -60,7 +61,8 @@ h4.h-num-234:before {
 ***
 
 ## Automatic heading numbering with hierarchy h3 and h4
-Description
+In this scenario, all h3, and h4 headings with class="h-num34" will have automatic numbering WITHOUT hierarchy for h2 and h3, and have automatic numbering WITH hierarchy for h3 and h4.
+
 
 ```css
 h2.h-num-34:before {
