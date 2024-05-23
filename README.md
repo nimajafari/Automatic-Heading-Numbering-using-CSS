@@ -37,7 +37,7 @@ h4.h-num:before {
 
 ***
 
-## Scenario 2: Automatic heading numbering with hierarchy h2, h3, and h4
+## Scenario 2: Automatic heading numbering with hierarchy for h2, h3, and h4
 In this scenario, all h2, h3, and h4 headings with `class="h-num234"` will have automatic numbering `WITH` hierarchy.
 
 
@@ -60,7 +60,7 @@ h4.h-num-234:before {
 
 ***
 
-## Scenario 3: Automatic heading numbering with hierarchy h3 and h4
+## Scenario 3: Automatic heading numbering with hierarchy for h3 and h4
 In this scenario, all h3, and h4 headings with `class="h-num34"` will have automatic numbering `WITHOUT` hierarchy for h2 and h3, and have automatic numbering `WITH` hierarchy for h3 and h4.
 
 
