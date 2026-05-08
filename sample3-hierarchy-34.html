@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scenario 3: Numbering With Hierarchy (h3, h4)</title>
+  <style>
+    body.sample3 { counter-reset: h1counter h2counter h3counter h4counter h5counter h6counter; }
+    .sample3 h1 { counter-reset: h2counter; }
+    .sample3 h2 { counter-reset: h3counter; }
+    .sample3 h3 { counter-reset: h4counter; }
+    .sample3 h4 { counter-reset: h5counter; }
+    .sample3 h5 { counter-reset: h6counter; }
+    h2.h-num-34:before {
+      counter-increment: h2counter;
+      content: counter(h2counter) ".\00a0\00a0";
+    }
+    h3.h-num-34:before {
+      counter-increment: h3counter;
+      content: counter(h3counter) ".\00a0\00a0";
+    }
+    h4.h-num-34:before {
+      counter-increment: h4counter;
+      content: counter(h3counter) "." counter(h4counter) ".\00a0\00a0";
+    }
+  </style>
+</head>
+<body class="sample3">
+  <h1>Document Title</h1>
+  <h2 class="h-num-34">Section 1</h2>
+  <h3 class="h-num-34">Subsection 1.1</h3>
+  <h3 class="h-num-34">Subsection 1.2</h3>
+  <h4 class="h-num-34">Detail 1.2.1</h4>
+  <h2 class="h-num-34">Section 2</h2>
+  <h3 class="h-num-34">Subsection 2.1</h3>
+  <h4 class="h-num-34">Detail 2.1.1</h4>
+  <h4 class="h-num-34">Detail 2.1.2</h4>
+</body>
+</html>
